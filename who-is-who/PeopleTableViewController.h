@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PeopleTableViewController.h
 //  who-is-who
 //
 //  Created by Simone Ferrini on 01/06/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PeopleTableViewController : UITableViewController
 
 @end

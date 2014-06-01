@@ -14,13 +14,14 @@
 		FC3E10FB193B11C2000B1877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E10FA193B11C2000B1877 /* main.m */; };
 		FC3E10FF193B11C2000B1877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E10FE193B11C2000B1877 /* AppDelegate.m */; };
 		FC3E1102193B11C2000B1877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3E1100193B11C2000B1877 /* Main.storyboard */; };
-		FC3E1105193B11C2000B1877 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E1104193B11C2000B1877 /* ViewController.m */; };
 		FC3E1107193B11C2000B1877 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3E1106193B11C2000B1877 /* Images.xcassets */; };
 		FC3E110E193B11C2000B1877 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3E110D193B11C2000B1877 /* XCTest.framework */; };
 		FC3E110F193B11C2000B1877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3E10EE193B11C2000B1877 /* Foundation.framework */; };
 		FC3E1110193B11C2000B1877 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3E10F2193B11C2000B1877 /* UIKit.framework */; };
 		FC3E1118193B11C2000B1877 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC3E1116193B11C2000B1877 /* InfoPlist.strings */; };
 		FC3E111A193B11C2000B1877 /* who_is_whoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E1119193B11C2000B1877 /* who_is_whoTests.m */; };
+		FC3E1125193B1260000B1877 /* PeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E1124193B1260000B1877 /* PeopleTableViewController.m */; };
+		FC3E1128193B194B000B1877 /* EmployeeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E1127193B194B000B1877 /* EmployeeTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		FC3E10FD193B11C2000B1877 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC3E10FE193B11C2000B1877 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FC3E1101193B11C2000B1877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FC3E1103193B11C2000B1877 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FC3E1104193B11C2000B1877 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FC3E1106193B11C2000B1877 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FC3E110C193B11C2000B1877 /* who-is-whoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "who-is-whoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3E110D193B11C2000B1877 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FC3E1115193B11C2000B1877 /* who-is-whoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "who-is-whoTests-Info.plist"; sourceTree = "<group>"; };
 		FC3E1117193B11C2000B1877 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FC3E1119193B11C2000B1877 /* who_is_whoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = who_is_whoTests.m; sourceTree = "<group>"; };
+		FC3E1123193B1260000B1877 /* PeopleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleTableViewController.h; sourceTree = "<group>"; };
+		FC3E1124193B1260000B1877 /* PeopleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleTableViewController.m; sourceTree = "<group>"; };
+		FC3E1126193B194B000B1877 /* EmployeeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeTableViewCell.h; sourceTree = "<group>"; };
+		FC3E1127193B194B000B1877 /* EmployeeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +118,7 @@
 				FC3E10FD193B11C2000B1877 /* AppDelegate.h */,
 				FC3E10FE193B11C2000B1877 /* AppDelegate.m */,
 				FC3E1100193B11C2000B1877 /* Main.storyboard */,
-				FC3E1103193B11C2000B1877 /* ViewController.h */,
-				FC3E1104193B11C2000B1877 /* ViewController.m */,
+				FC3E1129193B1FB4000B1877 /* PeopleTableViewController */,
 				FC3E1106193B11C2000B1877 /* Images.xcassets */,
 				FC3E10F5193B11C2000B1877 /* Supporting Files */,
 			);
@@ -150,6 +152,17 @@
 				FC3E1116193B11C2000B1877 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC3E1129193B1FB4000B1877 /* PeopleTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC3E1123193B1260000B1877 /* PeopleTableViewController.h */,
+				FC3E1124193B1260000B1877 /* PeopleTableViewController.m */,
+				FC3E1126193B194B000B1877 /* EmployeeTableViewCell.h */,
+				FC3E1127193B194B000B1877 /* EmployeeTableViewCell.m */,
+			);
+			name = PeopleTableViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3E1105193B11C2000B1877 /* ViewController.m in Sources */,
 				FC3E10FF193B11C2000B1877 /* AppDelegate.m in Sources */,
+				FC3E1128193B194B000B1877 /* EmployeeTableViewCell.m in Sources */,
+				FC3E1125193B1260000B1877 /* PeopleTableViewController.m in Sources */,
 				FC3E10FB193B11C2000B1877 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
