@@ -30,6 +30,19 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor colorWithRed:0.97 green:0.97 blue:0.97 alpha:1];
+    
+    [self refreshEmployeesArray];
+}
+
+- (void)refreshEmployeesArray {
+    if (!self.employeeCreator) {
+        self.employeeCreator = [[EmployeeCreator alloc]init];
+    }
+    
+    [self.employeeCreator createEmployeesWithCompletionHandler:^(NSArray *employees) {
+        self.employees = employees;
+        [self.tableView reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,15 +56,41 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 1;
+    return self.employees.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     EmployeeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"
-                                                            forIndexPath:indexPath];
+                                                                  forIndexPath:indexPath];
     
-    [cell configureCellWithImage:[UIImage imageNamed:@""]];
+    
+    Employee *thisEmployee = [self.employees objectAtIndex:indexPath.row];
+    
+    [cell setBackgroundColor:[UIColor clearColor]];
+    
+    cell.imageView.image = nil;
+    
+    [cell configureCellWithImage:[UIImage imageNamed:@"logo-large"]];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+
+            UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:thisEmployee.imageURL]]];
+        
+            if (image) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    EmployeeTableViewCell *updateCell = (id)[tableView cellForRowAtIndexPath:indexPath];
+                    if (updateCell)
+                        [cell configureCellWithImage:image];
+                });
+
+        }
+    });
+    
+    [cell.nameLabel setText:thisEmployee.name];
+    [cell.jobLabel setText:thisEmployee.job];
+    [cell.descriptionTextView setText:thisEmployee.description];
+    
     
     return cell;
 }

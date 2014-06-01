@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "EmployeeCreator.h"
+
 @interface PeopleTableViewController : UITableViewController
+
+@property EmployeeCreator *employeeCreator;
+@property NSArray *employees;
 
 @end
