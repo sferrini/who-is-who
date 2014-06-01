@@ -22,6 +22,7 @@
 		FC3E111A193B11C2000B1877 /* who_is_whoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E1119193B11C2000B1877 /* who_is_whoTests.m */; };
 		FC3E1125193B1260000B1877 /* PeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E1124193B1260000B1877 /* PeopleTableViewController.m */; };
 		FC3E1128193B194B000B1877 /* EmployeeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E1127193B194B000B1877 /* EmployeeTableViewCell.m */; };
+		FC3E112C193B2192000B1877 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E112B193B2192000B1877 /* Employee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		FC3E1124193B1260000B1877 /* PeopleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleTableViewController.m; sourceTree = "<group>"; };
 		FC3E1126193B194B000B1877 /* EmployeeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeTableViewCell.h; sourceTree = "<group>"; };
 		FC3E1127193B194B000B1877 /* EmployeeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeTableViewCell.m; sourceTree = "<group>"; };
+		FC3E112A193B2192000B1877 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		FC3E112B193B2192000B1877 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,7 @@
 				FC3E10FD193B11C2000B1877 /* AppDelegate.h */,
 				FC3E10FE193B11C2000B1877 /* AppDelegate.m */,
 				FC3E1100193B11C2000B1877 /* Main.storyboard */,
+				FC3E112D193B219A000B1877 /* Model */,
 				FC3E1129193B1FB4000B1877 /* PeopleTableViewController */,
 				FC3E1106193B11C2000B1877 /* Images.xcassets */,
 				FC3E10F5193B11C2000B1877 /* Supporting Files */,
@@ -163,6 +167,15 @@
 				FC3E1127193B194B000B1877 /* EmployeeTableViewCell.m */,
 			);
 			name = PeopleTableViewController;
+			sourceTree = "<group>";
+		};
+		FC3E112D193B219A000B1877 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC3E112A193B2192000B1877 /* Employee.h */,
+				FC3E112B193B2192000B1877 /* Employee.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3E112C193B2192000B1877 /* Employee.m in Sources */,
 				FC3E10FF193B11C2000B1877 /* AppDelegate.m in Sources */,
 				FC3E1128193B194B000B1877 /* EmployeeTableViewCell.m in Sources */,
 				FC3E1125193B1260000B1877 /* PeopleTableViewController.m in Sources */,
