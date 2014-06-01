@@ -38,7 +38,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee5-XA-3Ai">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee5-XA-3Ai">
                                             <rect key="frame" x="20" y="128" width="280" height="107"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -47,6 +47,10 @@
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ee5-XA-3Ai" firstAttribute="leading" secondItem="Yo5-8c-A9n" secondAttribute="leading" constant="20" id="8OG-NT-k6X"/>
+                                        <constraint firstAttribute="trailing" secondItem="ee5-XA-3Ai" secondAttribute="trailing" constant="20" id="Tv7-JU-G3I"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descriptionTextView" destination="ee5-XA-3Ai" id="At7-a0-Qx1"/>
